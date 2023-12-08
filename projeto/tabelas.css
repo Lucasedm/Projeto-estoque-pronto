@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+.nav{
+    background-color: #0F1010;
+    width: 100%;
+    height: 100px;
+}
+
+.Logo img{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    width: 80;
+    height: 75px;
+    padding-left: 15px;
+}
+
+img, p{
+    color: #FFFFFF;
+    float: left;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.bv{
+    color: #FFFFFF;
+    float:  right;
+    margin-right: 20px;
+    font-size: 30px;
+    
+}
+
+.nav-menu{
+    background-color: #181B20;
+    width: 100vhpx;
+    height: 40px;
+}
+
+.nav-menu .tabs1{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-left: 25px;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.nav-menu .tabs2{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.nav-menu .tabs3{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.nav-menu .tabs4{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.nav-menu .tabs5{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.nav-menu .tabs6{
+    color: #F5F5F5;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* hambuerguer menu */
+.menu{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.menu-faketrigger{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+    width: 111px;
+    height: 35px;
+    opacity: 0;
+}
+
+.menu .menu-lines{
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu .menu-lines span{
+    transition: all ease .3s;
+    display: block;
+    background-color: #F5F5F5;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span{
+    background-color: #181B20;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+    
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+    opacity: 0;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu .menu-faketrigger:checked ~ ul{
+    margin-left: 0px;
+}
+
+.menu ul{
+    position: absolute;
+    transition: all ease .3s;
+    background-color: #EDEDED;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: calc(100vh - 100px);
+    padding-top: 200px;
+    margin-left: -300px;
+}
+
+.menu ul li{
+    padding: 10px 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #0F1010;
+    transition: all ease .3s;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.menu ul li a:hover{
+    color: #999;
+}
+
+.td{
+    padding-left: 50px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.area-tab{
+    background-color: #fcfafa;
+    justify-content: left;
+    align-items: left;
+    margin-left: 40px;
+    width: 1750px;
+    height: 200vh;
+    padding: 20px;
+}
+
+.item{
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+th {
+    background-color: rgb(1, 2, 1); 
+    color: white; 
+}
+
+
+td {
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+
+.tabela-dados tbody tr:hover {
+    background-color: #e0e0e0;
+}
+.botao{
+    background-color: #0F1010;
+    padding: 5px;
+    color: white;
+}
+.botaoex{
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    color: white;
+}
+.botaoEdit{
+    background-color: #0F1010;
+    padding: 5px;
+    color: white;
+}

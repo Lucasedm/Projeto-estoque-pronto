@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/editprod.css">
+  <title>Produtos Controle De Estoque</title>
+</head>
+
+<body>
+  <section class="area-Cadastro">
+    <div class="Cadastro">
+      <img class="logoimg" src="imagens/caixa.png" alt="">
+      <div class="stock">Stock Master</div>
+      <div class="Titulo">insira produtos</div>
+        <form action="prodPostadm.php" method="post">
+          <input  type="text" class="form-control" placeholder="Nome do produto" name="Nome_P">
+          <input  type="text" class="form-control" placeholder="Categoria" name="Nome_C">
+          <input  type="text" class="form-control" placeholder="Descrição" name="Descricao_P" >
+          <input  type="text" class="form-control" placeholder="Preço unitário" name="Preço_Unitario_P" >
+          <input  type="text" class="form-control" placeholder="Quantidade em estoque" name="Quantidade_Estoque_P">
+          <div class="inputdiv">  
+            <input type="submit" class="BotaoCadastro" value="Salvar">
+          </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
